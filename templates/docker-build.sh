@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo ${IMAGE_REGISTRY_PASSWORD}
+
 if  [[ ${GIT_REPOSITORY} == https* ]] ;
 then
     replacer=https://${GIT_USERNAME}:${GIT_PASSWORD}@
