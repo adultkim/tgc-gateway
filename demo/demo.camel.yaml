@@ -1,0 +1,12 @@
+- route:
+    id: route-e186
+    nodePrefixId: route-1d5
+    from:
+      id: from-f86a
+      uri: kamelet:timer-source
+      parameters:
+        message: just like scheduler!
+      steps:
+        - log:
+            id: log-4371
+            message: ${body}
